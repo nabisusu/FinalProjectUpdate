@@ -1,0 +1,25 @@
+'''
+Author: Susana Bickel
+Date: Ongoing (Current 4/26/2025)
+This program will create a randomizer like dice where a user needs to pick a number between 1-6 and a task will be given for thme to complete.
+It is created to help motivate the user.
+'''
+# Prompt user to choose a number
+print("Welcome Friend!")
+print("Let's choose a number between 1 and 6:")
+
+# Get input from user
+user_input = input("Your choice: ")
+
+# Try to convert input to an integer and validate it
+if user_input.isdigit():
+    number = int(user_input)
+    if 1 <= number <= 6:
+        print(f"Great! You chose the number {number}.")
+        # TODO: Add more logic here (like a game or random challenge)
+    else:
+        print("Oops! That number is not between 1 and 6.")
+else:
+    print("Please enter a valid number.")
+
+# TODO: Maybe repeat until valid input or add a game
